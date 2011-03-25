@@ -301,7 +301,7 @@
 				Name="VCLinkerTool"
 				AdditionalOptions="/subsystem:windows /dll /incremental:yes /export:initializePlugin /export:uninitializePlugin"
 				AdditionalDependencies="cudart.lib glu32.lib glew64.lib cutil64.lib Foundation.lib OpenMaya.lib OpenMayaAnim.lib OpenMayaFX.lib OpenMayaUI.lib opengl32.lib"
-				OutputFile="C:\Users\vinz\Documents\maya\plug-ins\VHFluidCuda11X64.mll"
+				OutputFile="D:\WD160GB\Programming\VHCudaFluid\plugins\VHFluidCuda11X64.mll"
 				AdditionalLibraryDirectories="&quot;$(CUDA_LIB_PATH)&quot;;&quot;C:\Program Files\Autodesk\Maya2011\lib&quot;;&quot;$(NVSDKCOMPUTE_ROOT)/C/common/lib&quot;"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
@@ -418,13 +418,6 @@
 			<File
 				RelativePath="..\Common3D\fluid3D.cu"
 				>
-				<FileConfiguration
-					Name="Release|x64"
-					>
-					<Tool
-						Name="Cudart Build Rule"
-					/>
-				</FileConfiguration>
 			</File>
 			<File
 				RelativePath="..\Common3D\perlinKernel3d.cu"
