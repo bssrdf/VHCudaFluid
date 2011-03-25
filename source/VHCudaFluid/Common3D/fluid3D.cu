@@ -1423,7 +1423,7 @@ extern "C" void reset3DFluid(VHFluidSolver3D *d) {
 	cudaMemset(d->dev_obstacles,0, sizeof(float4) * d->res.width * d->res.height * d->res.depth);
 	cudaMemset(d->dev_vort,0, sizeof(float4) * d->res.width * d->res.height * d->res.depth);
 
-	int nthreads = 8;
+	int nthreads = 4;
 
 	dim3	blocks( (d->res.width/nthreads + (!(d->res.width%nthreads)?0:1))
 				* (d->res.depth/nthreads + (!(d->res.depth%nthreads)?0:1)),
